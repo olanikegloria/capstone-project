@@ -139,7 +139,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         place-items: center;
-        margin: 1rem 10rem;
+        margin: 5rem 10rem;
     }
 
     .speaker-container {
@@ -153,4 +153,29 @@
      margin-left: -10rem;
     }
 
+    .contents {
+        flex-direction: column;
+    }
+
+    .main-program-content {
+        flex-direction: row;
+        gap: 10px;
+        margin: 2rem 10rem;
+    }
+    .back-white {
+        background-color: white;
+    }
+
+    .black {
+        color: black;
+    }
+
+    .main-hero-txt {
+        margin: 2rem 10rem;
+        display: flex;
+        flex-direction: column;
+    }
+   .second-part-hero {
+    margin-right: 50rem;
+  }
 }
