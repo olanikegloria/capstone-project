@@ -65,7 +65,7 @@ speakers.forEach((content) => {
                   <p class="description">${content.description}</p>
                 </div>`
   featuredContainer.appendChild(speakerContainer);
-})
+});
 
 // const seeMoreBtn = document.querySelector('.featured-btn');
 
