@@ -171,11 +171,11 @@
     }
 
     .main-hero-txt {
-        margin: 2rem 10rem;
+        padding: 2rem 10rem;
         display: flex;
         flex-direction: column;
     }
    .second-part-hero {
-    margin-right: 50rem;
+    margin-right: 30rem;
   }
 }

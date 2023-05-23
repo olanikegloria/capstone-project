@@ -324,11 +324,15 @@ color: #000000;
   color: #ff4f38;
   background-color: white;
   border: 5px solid ghostwhite;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 10px;
   width: 100%;
   text-align: center;
   margin-bottom: 2rem;
 
+}
+
+.speaker-container:not(.card1):not(.card2){
+  display: none;
 }
 
