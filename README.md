@@ -24,10 +24,10 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Mobile First
+# 📖 capstone project
 
 
-Mobile First is a project that helps test and learn and the basic set up of an html & css project with no errors that designs for both mobile & desktop responsiveness.
+This is a project that helps test and learn and the basic set up of an html & css project with no errors that designs for both mobile & desktop responsiveness.
 
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -45,7 +45,7 @@ Mobile First is a project that helps test and learn and the basic set up of an h
 - Figma
 
 ### 🚀 Live Demo <a name="live-demo"></a>
-https://olanikegloria.github.io/mobile-first/ 🛠
+ 🛠
 
 <!-- GETTING STARTED -->
 
@@ -109,9 +109,9 @@ Still under construction:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Desktop view]**
-- [ ] **[contact form]**
-- [ ] **[mobile nav menu]**
+- [ ] **[adding animation]**
+- [ ] **[ticket page]**
+- [ ] **[shedule page]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -140,6 +140,7 @@ If you like this project please give it a star
 
 - I would like to thank microverse for their amazing school program
 - I would like to thank the code reviewer for reviewing my project
+-I would also like to thank the autho of this work  Cindy Shin in Behance for creating such a nice project that i can use to practice
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -149,7 +150,7 @@ If you like this project please give it a star
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/olanikegloria/mobile-first/blob/main/LICENSE) licensed.
+This project is [MIT](https://github.com/olanikegloria/capstone-project/blob/main/LICENSE) licensed.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p># MObile First
