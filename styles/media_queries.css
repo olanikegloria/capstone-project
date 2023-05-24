@@ -76,8 +76,19 @@
     padding: 0.8rem;
   }
 
-  .first-part h1 {
-    padding-top: 5rem;
+  .first-part-hero {
+    padding-top: 3rem;
+    padding-left: 1rem;
+  }
+
+  .first-part-hero h1 {
+    padding-top: 0.5rem;
+    max-width: 70%;
+    font-size: 3rem;
+  }
+
+  .first-part-hero h1 br {
+    display: block;
   }
 
   .first-part-about {
@@ -87,6 +98,16 @@
     align-items: center;
     justify-content: center;
     padding: 0.5rem;
+  }
+
+  .first-part-about h1 {
+    padding-top: 5.5rem;
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+
+  .first-part-about hr {
+    margin-top: 0;
   }
 
   .bg-white {
@@ -117,19 +138,8 @@
     padding: 0 5rem;
   }
 
-  .past-img {
-    display: flex;
+  .card-container {
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    padding: 0 10rem;
-    margin-bottom: 2rem;
-  }
-
-  .past-img img {
-    padding: 1rem;
-    width: 100%;
   }
 
   .footer-desktop {
@@ -155,58 +165,25 @@
     padding: 0 4rem;
   }
 
-  .featured-container {
+  .featured {
+    padding: 60px 160px;
+    margin-bottom: 2em;
+  }
+
+  .speakerContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-items: center;
-    margin: 5rem 10rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 50px 40px;
   }
 
-  .speaker-container {
+  .speaker-photo {
+    position: relative;
+    width: 30%;
+  }
+
+  .speakerCard:not(.card1):not(.card2) {
     display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .speakers-text {
-    padding-left: 1rem;
-  }
-
-  .card1 .speakers-text {
-    margin-left: 0.5rem;
-  }
-
-  .card2 .speakers-text {
-    margin-left: 4.5rem;
-  }
-
-  .card3 .speakers-text {
-    margin-left: 4.5rem;
-  }
-
-  .card4 {
-    margin-left: 0.5rem;
-  }
-
-  .card4 .speakers-text {
-    margin-left: 5rem;
-  }
-
-  .card5 .speakers-text {
-    margin-left: 5.5rem;
-  }
-
-  .card5 img {
-    width: 160%;
-  }
-
-  .card6 .speakers-text {
-    margin-left: 6.5rem;
-  }
-
-  .card6 img {
-    width: 160%;
-    margin-left: 1rem;
   }
 
   .contents {
@@ -254,14 +231,14 @@
     margin: 0 25rem;
   }
 
-  .first-part-hero {
-    padding-top: 8rem;
-    margin-left: 1rem;
-  }
+  /* .first-part-hero {
+        padding-top: 8rem;
+        margin-left: 1rem;
+    }
 
-  .first-part-hero p {
-    padding-bottom: 0;
-  }
+    .first-part-hero p {
+        padding-bottom: 0;
+    } */
 
   .date-head {
     font-size: 2rem;
@@ -275,15 +252,12 @@
     font-size: 1.2rem;
   }
 
-  .speaker-container:not(.card1):not(.card2) {
-    display: flex;
-  }
-
   .companies {
     padding-left: 3rem;
     padding-right: 3rem;
     padding-top: 4rem;
     padding-bottom: 1.5rem;
+    margin: 0 12rem;
   }
 
   .partner-container hr {

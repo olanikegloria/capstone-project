@@ -13,79 +13,98 @@ closeBtn.addEventListener('click', () => closeMenu());
 const speakers = [
   {
     name: 'yonkai Benkelry',
-    position: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
-    description: 'Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006 Wikipedia is freely available in 290 languag-es',
-    image: '/images/speaker1.png',
+    position: 'Berkman Professor',
+    description: 'Benkler studies commons-based peer production, and published his seminal book',
+    image: '../images/speaker.jpg',
     classname: 'card1',
   },
 
   {
     name: 'Kilnon Joe',
-    position: 'Chief Director of the Wikimedia Foundation',
-    description: 'As the main venue for new media art production in Korea, Nabi promotes cross-disciplinary collaboration and understanding among science technology, humanities, and the arts.',
-    image: '/images/speaker_01 1 (1).png',
+    position: 'Chief Director',
+    description: 'As the main venue for new media art production in Korea, Nabi promotes.',
+    image: '../images/speaker.jpg',
     classname: 'card2',
   },
 
   {
     name: 'SohYeong Noh',
-    position: 'Director of Art Centre Nabi and a board member of CC Korea',
-    description: 'As the main venue for new media art production in Korea, Nabi promotes cross-disciplinary collaboration and understanding among science technology, humanities, and the arts.',
-    image: '/images/speaker_01 1 (2).png',
+    position: 'Director of Art',
+    description: 'As the main venue for new media art production in Korea, Nabi promotes.',
+    image: '../images/speaker.jpg',
     classname: 'card3',
   },
 
   {
     name: 'Julia Leda',
-    position: 'President of Young Pirates of Europe',
-    description: 'European ingetration, political democracy and participation of youth through online as her major condern, Reda’s report outlining potential changes to EU copyright law was approved by the Parliament in July',
-    image: '/images/speaker_01 1 (3).png',
+    position: 'President',
+    description: 'European ingetration, political democracy and participation of youth',
+    image: '../images/speaker.jpg',
     classname: 'card4',
   },
 
   {
     name: 'Ryan Merkley',
-    position: 'CEO of Creativve Commons, ex COO of the Mozilla Foundation',
-    description: 'Ryan had been leading open-source projects at the Mozilla Foundation such as the open-source move-ment  Wikipedia is freely available in 290 languag-es and used by nearly half a billion people around the world ',
-    image: '/images/speaker_01 1.png',
+    position: 'CEO of Creativve Commons',
+    description: 'Ryan had been leading open-source projects at the Mozilla Foundation',
+    image: '../images/speaker.jpg',
     classname: 'card5',
   },
 
   {
     name: 'Lila tretikov',
-    position: 'Executive Director of the Wikimedia Foundation',
-    description: 'Lila Tretikov is the Executive of the Wikimedia Foundation, the nonprofit organization that operates Wikipedia. Wikipedia is freely available in 290 languag-es and used by nearly half a billion people around the world every month.',
-    image: '/images/speaker_01 1 (4).png',
+    position: 'Executive Director',
+    description: 'Lila Tretikov is the Executive of the Wikimedia Foundation, the nonprofit',
+    image: '../images/speaker.jpg',
     classname: 'card6',
   },
 
 ];
-const featuredContainer = document.querySelector('.featured-container');
-speakers.forEach((content) => {
-  const speakerContainer = document.createElement('div');
-  speakerContainer.classList.add('speaker-container', content.classname);
-  speakerContainer.innerHTML = `<div class="speaker-img"><img src="${content.image}"></div>
-                <div class="speakers-text">
-                  <h2 class="speaker-name">${content.name}</h2>
-                  <p class="post">${content.position}</p>
-                  <p class="description">${content.description}</p>
-                </div>`;
-  featuredContainer.appendChild(speakerContainer);
+
+// =========== Creating dynamic content for works section ============
+
+const cardContainer = document.createElement('div');
+cardContainer.className = 'speakerContainer';
+
+speakers.forEach((itemContent) => {
+  const card = document.createElement('div');
+  card.classList.add('speakerCard', itemContent.classname);
+
+  const speakerPhoto = document.createElement('div');
+  speakerPhoto.className = 'speaker-photo';
+
+  const image = document.createElement('img');
+  image.src = itemContent.image;
+
+  speakerPhoto.appendChild(image);
+
+  const speakerDetails = document.createElement('div');
+  speakerDetails.className = 'speaker-details';
+
+  const heading = document.createElement('h1');
+  heading.innerHTML = itemContent.name;
+  heading.className = 'speaker-name';
+
+  const position = document.createElement('p');
+  position.innerHTML = itemContent.position;
+  position.className = 'speaker-position';
+
+  // const divider = document.createElement('hr');
+  // divider.className = 'divider';
+
+  const description = document.createElement('p');
+  description.innerHTML = itemContent.description;
+  description.className = 'speaker-description';
+
+  speakerDetails.appendChild(heading);
+  speakerDetails.appendChild(position);
+  // speakerDetails.appendChild(divider);
+  speakerDetails.appendChild(description);
+
+  card.appendChild(speakerPhoto);
+  card.appendChild(speakerDetails);
+  cardContainer.appendChild(card);
 });
 
-const seeMoreBtn = document.querySelector('.see-more');
-
-function toggleHiddenCards() {
-  const hiddenCards = document.querySelectorAll('.speaker-container:not(.card1):not(.card2)');
-  hiddenCards.forEach((card) => {
-    if (card.style.display === 'none') {
-      card.style.display = 'flex';
-      seeMoreBtn.innerHTML = '<a href="#">LESS</a><i class="fa fa-chevron-up"></i>';
-    } else {
-      card.style.display = 'none';
-      seeMoreBtn.innerHTML = '<a href="#">MORE</a><i class="fa fa-chevron-down"></i>';
-    }
-  });
-}
-
-seeMoreBtn.addEventListener('click', toggleHiddenCards);
+const targetElement = document.querySelector('#speakers');
+targetElement.appendChild(cardContainer);
