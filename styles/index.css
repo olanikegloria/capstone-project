@@ -81,7 +81,7 @@ body {
 }
 
 .hero {
-  background-image: url('/images/Frame\ 5.png');
+  background-image: url('../images/Frame\ 5.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -89,7 +89,7 @@ body {
 }
 
 .hero-about {
-  background-image: url('/images/Hero.png');
+  background-image: url('../images/Hero.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -135,10 +135,11 @@ body {
 
 .date {
   color: #595959;
+  margin-left: 0.6em;
 }
 
 .main-program {
-  background-image: url('/images/program.png');
+  background-image: url('../images/program.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -182,12 +183,11 @@ body {
 .main-heading {
   text-align: center;
   padding-bottom: 3rem;
-  font-size: 2rem;
 }
 
 .main-heading h3 {
-  font-family: 'lato', sans-serif;
-  font-weight: 300;
+  font-size: 26px;
+  font-weight: 550;
 }
 
 .main-btn {
@@ -291,15 +291,14 @@ hr {
 }
 
 .partner-heading {
-  font-size: 1.5rem;
-  font-weight: 300;
+  font-size: 26px;
+  font-weight: 550;
 }
 
 .companies {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
   padding: 3rem;
 }
 
@@ -324,61 +323,6 @@ hr {
   display: none;
 }
 
-.featured-container {
-  margin: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.featured-title {
-  font-size: 2rem;
-  font-weight: 400;
-  text-align: center;
-  padding: 1rem 2rem;
-}
-
-.speaker-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding-top: 2rem;
-}
-
-.speakers-text {
-  display: flex;
-  flex-direction: column;
-  padding-left: 3rem;
-  font-size: 12px;
-}
-
-.speaker-img {
-  border: none;
-  width: 100%;
-}
-
-.speaker-img img {
-  background: white;
-  width: 140%;
-}
-
-.speaker-name {
-  font-size: 15px;
-  margin-bottom: 0;
-}
-
-.speaker-post {
-  font-size: 11px;
-  padding-bottom: 0;
-}
-
-.post {
-  padding: 1rem 0;
-  color: #ff4f38;
-}
-
 .featured-btn li {
   list-style: none;
   text-decoration: none;
@@ -393,7 +337,130 @@ hr {
   margin-bottom: 2rem;
 }
 
-.speaker-container:not(.card1):not(.card2) {
+.featured {
+  padding: 40px 10px;
+}
+
+.featured-title {
+  text-align: center;
+}
+
+.featured-title h3 {
+  font-size: 26px;
+  font-weight: 550;
+}
+
+.featured-container {
+  padding: 40px 0;
+}
+
+.speakerContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.speakerCard {
+  display: flex;
+  gap: 1.5em;
+}
+
+.speaker-photo {
+  position: relative;
+  width: 40%;
+}
+
+.speaker-photo img {
+  width: 100%;
+  height: 110px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.speaker-photo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  background-image: url('../images/mosaic1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.speaker-details {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 2rem;
+  margin-bottom: 4rem;
+}
+
+.card {
+  max-width: 500px;
+  height: 300px;
+  width: 100%;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 0;
+}
+
+.container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.459);
+  z-index: 1;
+}
+
+.speaker-name {
+  font-size: 24px;
+  color: var(--main);
+}
+
+.speaker-position {
+  font-size: 16px;
+  color: #ff4f38;
+  font-weight: 550;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid rgba(128, 128, 128, 0.904);
+  margin: 5px 0;
+  width: 23px;
+}
+
+.speaker-description {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.speakerCard:not(.card1):not(.card2) {
   display: none;
 }
 
@@ -415,9 +482,13 @@ hr {
   padding-top: 0;
   font-size: 3rem;
   font-weight: 900;
-  background: url('/images/glowy.jpg') center/cover;
+  background: url('../images/glowy.jpg') center/cover;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+}
+
+.first-part-hero h1 br {
+  display: none;
 }
 
 .creative-heading hr {

@@ -45,7 +45,7 @@ This is a project that helps test and learn and the basic set up of an html & cs
 - Figma
 
 ### 🚀 Live Demo <a name="live-demo"></a>
- Your site is live at https://olanikegloria.github.io/capstone-project/🛠
+ Your site is live at https://olanikegloria.github.io/capstone-project/ 🛠
 
 <!-- GETTING STARTED -->
 
