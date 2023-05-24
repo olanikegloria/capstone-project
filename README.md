@@ -41,7 +41,7 @@ This is a project that helps test and learn and the basic set up of an html & cs
 
 - Html.
 - Css.
-- Linter.
+- Linter
 - Figma
 
 ### 🚀 Live Demo <a name="live-demo"></a>
