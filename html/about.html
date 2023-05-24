@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&family=Poppins:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/styles/index.css" />
     <link rel="stylesheet" href="/styles/media_queries.css" />
     <script src="/js/index.js" defer></script>
@@ -39,7 +47,7 @@
                         <a href="#news">news</a>
                     </li>
                     <li>
-                        <a href="#cc campaign">cc campaaign</a>
+                        <a href="#cc campaign">cc campaign</a>
                     </li>
                 </ul>
                 
@@ -76,7 +84,7 @@
                     <img src="/images/logo.png">
                 </div>
                 <ul class="desktop-lists">
-                    <li>
+                    <li class="about">
                         <a href="about.html">About</a>
                     </li>
                     <li>
@@ -91,8 +99,8 @@
                     <li>
                         <a href="#news">news</a>
                     </li>
-                    <li>
-                        <a href="#cc campaign">campaaign</a>
+                    <li class="campaign">
+                        <a href="#cc campaign"> cc campaign</a>
                     </li>
                 </ul>
             </div>
@@ -101,24 +109,32 @@
     </header>
     <section class="hero-about">
         <div class="hero-text pd-none">
-            <div class="hero-headings ">
+            <div class="hero-headings hero-headings-about">
                 <div class="first-part first-part-about">
                     <p class="txt-center none">"Hello! Sharing world"</p>
                     <h1 class="txt-center">CREATIVE COMMONS GLOBAL SUBMIT 2015</h1>
+                    <hr>
                 </div>
-                <p class="second-part bg-white">The Global Summit brings together the community of
+                <p class="none second-part  second-part-about ">The Global Summit brings together the community of
                 experts, academics, and activists who comprise the Creative Commons affiliate network in a different country every two
                 years.
                 This year, we hope to expand our invitation list including organizations and individuals.</p>
             </div>
             <div class="last-txt">
                 <p class="txt-center">Please contact us per Email for nay further questions about CC Global Summit 2015!</p>
-                <p class="txt-center">ccsummit2015@cckorea.org</p>
+                <div class="txt-center horizontal">
+                    ccsummit2015@cckorea.org
+                    <i class="fa-thin fa-greater-than "></i>
+                    <hr>
+                </div>
             </div>
         </div>
     </section>
     <section class="creative">
+       <div class="creative-heading">
         <h3>Creative commons global submit 2015 logo</h3>
+        <hr>
+       </div>
         <p class="none">The logo of CC Global Summit 2015 was decided through the logo competition from 8, June to 7, July.</p>
         <p class="remove">The logo of CC Global Summit 2015 was decided through the logo competition from 8, June to 7, July.
         After online public voting and Selection Committee’s judging process, the logo from Naresh Agrawal won the prize.
@@ -130,7 +146,10 @@
     <section class="past-experiences">
         <div class="past-experiences-container">
             <div class="past-heading">
-                <h3>See Past Global Submit</h3>
+                <div class="past-heading1">
+                    <h3>See Past Global Submit</h3>
+                    <hr>
+                </div>
                 <p>Take a look at the past two CC Global Summits which took place in Buenos Aires and in Warsaw</p>
             </div>
             <div class="past-img">
@@ -142,6 +161,7 @@
     <section class="partner none">
         <div class="partner-container">
             <h3 class="partner-heading">Partner</h3>
+            <hr>
         </div>
         <div class="companies">
             <img src="/images/mozilla 1.png">

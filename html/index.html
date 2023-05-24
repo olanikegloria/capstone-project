@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>capstone project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&family=Poppins:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/styles/index.css" />
     <link rel="stylesheet" href="/styles/media_queries.css" />
     <script src="/js/index.js" defer></script>
@@ -75,7 +83,7 @@
                         <img src="/images/logo.png">
                     </div>
                     <ul class="desktop-lists">
-                        <li>
+                        <li class="about">
                             <a href="about.html">About</a>
                         </li>
                         <li>
@@ -90,8 +98,8 @@
                         <li>
                             <a href="#news">news</a>
                         </li>
-                        <li>
-                            <a href="#cc campaign">campaaign</a>
+                        <li class="campaign">
+                            <a href="#cc campaign">campaign</a>
                         </li>
                     </ul>
                 </div>
@@ -101,15 +109,15 @@
     <section class="hero">
         <div class="hero-text main-hero-txt">
             <div class="hero-headings ">
-               <div class="first-part">
+               <div class="first-part first-part-hero">
                 <p>"Hello! Sharing  world"</p>
                 <h1>CREATIVE COMMONS GLOBAL SUBMIT 2015</h1>
                </div>
                 <p class="second-part second-part-hero ">A joyful celebration believing in the value of openness and sharing, creating a positive change with people from over 80 countries is taking place in October, in Korea.</p>
             </div>
             <div class="date">
-                <h3>2015.10.15(THU) ~ 16(FRI)</h3>
-                <p>@ National Museum of Karea, Art Center Nabi and more</p>
+                <h3 class="date-head">2015.10.15(THU) ~ 16(FRI)</h3>
+                <p class="date-second">@ National Museum of Karea, Art Center Nabi and more</p>
             </div>
         </div>
     </section>
@@ -117,6 +125,7 @@
         <div class="main-program-container">
            <div class="main-heading">
             <h3>Main program</h3>
+            <hr>
            </div>
            <div class="main-program-content">
             <div class="contents">
@@ -125,42 +134,50 @@
                 <p>Listen to the speakers from various countries about the messages of sharing and opening.</p>
             </div>
             <div class="contents">
-                <img src="/images/program_icon_01 1.svg">
-                <h4>Lecture</h4>
+                <img src="/images/program_icon_02 1.svg">
+                <h4>Forum</h4>
                 <p>Listen to the speakers from various countries about the messages of sharing and opening.</p>
             </div>
             <div class="contents">
-                <img src="/images/program_icon_01 1.svg">
-                <h4>Lecture</h4>
+                <img src="/images/program_icon_03 1.svg">
+                <h4>CC Exhibition</h4>
                 <p>Listen to the speakers from various countries about the messages of sharing and opening.</p>
             </div>
             <div class="contents">
-                <img src="/images/program_icon_01 1.svg">
-                <h4>Lecture</h4>
+                <img src="/images/program_icon_04 1 (1).svg">
+                <h4>Workshop</h4>
                 <p>Listen to the speakers from various countries about the messages of sharing and opening.</p>
             </div>
             <div class="contents">
-                <img src="/images/program_icon_01 1.svg">
-                <h4>Lecture</h4>
+                <img src="/images/program_icon_05 1.svg">
+                <h4>CC Ignite</h4>
                 <p>Listen to the speakers from various countries about the messages of sharing and opening.</p>
             </div>
             <div class="main-btn none">
                 <a>Join cc global submit 2015</a>
             </div>
            </div>
+        <div class="remove see-all">
+            <h3>SEE THE WHOLE PROGRAM</h3>
+        </div>
         </div>
     </section>
     <section class="featured">
-        <h2 class="featured-title">Featured speakers</h2>
+        <div class="featured-title">
+            <h3>Featured speakers</h3>
+            <hr>
+        </div>
         <div class="featured-container">
         </div>
-        <div class="featured-btn none">
-            <button class="see-more">more v </button>
-        </div>
+        <ul class="featured-btn none">
+            <li class="see-more none"><a href="#">MORE</a>
+            <i class="fa fa-chevron-down"></i></li>
+        </ul>
     </section>
     <section class="partner remove ">
         <div class="partner-container">
             <h3 class="partner-heading">Partner</h3>
+            <hr>
         </div>
         <div class="companies">
             <img src="/images/mozilla 1.png">
