@@ -39,7 +39,7 @@ const speakers = [
     name: 'Julia Leda',
     position: 'President',
     description: 'European ingetration, political democracy and participation of youth',
-    image: '../images/speaker.jpg',
+    image: '../images/grad2.jpeg',
     classname: 'card4',
   },
 
