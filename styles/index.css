@@ -81,7 +81,7 @@ body {
 }
 
 .hero {
-  background-image: url('/images/Frame\ 5.png');
+  background-image: url('../images/Frame\ 5.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -89,7 +89,7 @@ body {
 }
 
 .hero-about {
-  background-image: url('/images/Hero.png');
+  background-image: url('../images/Hero.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -138,7 +138,7 @@ body {
 }
 
 .main-program {
-  background-image: url('/images/program.png');
+  background-image: url('../images/program.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -415,7 +415,7 @@ hr {
   padding-top: 0;
   font-size: 3rem;
   font-weight: 900;
-  background: url('/images/glowy.jpg') center/cover;
+  background: url('../images/glowy.jpg') center/cover;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
