@@ -62,6 +62,11 @@ body {
   list-style: none;
 }
 
+.featured-btn li a {
+  color: black;
+  text-decoration: none;
+}
+
 .side-menu ul li a {
   color: white;
   font-size: 25px;
@@ -126,7 +131,6 @@ body {
   padding: 1rem;
   border-radius: 10px;
   width: 100%;
-
 }
 
 .date {
@@ -151,15 +155,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .contents {
-  display: flex;
-  align-items: center;
   justify-content: center;
   gap: 10px;
-  background-color: #3B3E45;
+  background-color: #3b3e45;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -172,21 +173,21 @@ body {
 }
 
 .main-program-container {
-  padding-top:2rem ;
+  padding-top: 2rem;
   padding-bottom: 5rem;
   padding-left: 0.8rem;
   padding-right: 0.8rem;
 }
 
-.main-heading  {
+.main-heading {
   text-align: center;
   padding-bottom: 3rem;
   font-size: 2rem;
-} 
+}
 
 .main-heading h3 {
   font-family: 'lato', sans-serif;
-    font-weight: 300;
+  font-weight: 300;
 }
 
 .main-btn {
@@ -206,18 +207,16 @@ body {
 .bg-white {
   background-color: #fff;
   text-align: center;
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
   display: flex;
   align-items: center;
-  text-align: center;
   letter-spacing: -0.06em;
   padding: 3rem 2rem;
-
-  color: #000000;
+  color: #000;
 }
 
 .pd-none {
@@ -228,15 +227,19 @@ body {
   text-align: center;
 }
 
- .horizontal hr {
-  width: 18%;
-  height: 1px;
-  background-color: #3B3E45;
-  margin-top: 0;
+hr {
+  width: 60px;
+  height: 3px;
+  background-color: #ff4f38;
+  border: none;
+  margin: 20px auto 10px auto;
 }
 
-.pd-1 {
-  margin-left: 1px;
+.horizontal hr {
+  width: 18%;
+  height: 1px;
+  background-color: #3b3e45;
+  margin-top: 0;
 }
 
 .last-txt {
@@ -358,7 +361,7 @@ body {
 
 .speaker-img img {
   background: white;
-  width: 140%; 
+  width: 140%;
 }
 
 .speaker-name {
@@ -375,32 +378,24 @@ body {
   padding: 1rem 0;
   color: #ff4f38;
 }
- 
 
 .featured-btn li {
   list-style: none;
   text-decoration: none;
   color: #ff4f38;
   background-color: white;
-  border: 1px solid #DCDCDC;
+  border: 1px solid #dcdcdc;
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
   border-radius: 4px;
   padding: 10px;
   width: 100%;
   text-align: center;
   margin-bottom: 2rem;
-
-}
-
-.featured-btn li a {
-  color: black;
-  text-decoration: none;
 }
 
 .speaker-container:not(.card1):not(.card2) {
   display: none;
 }
-
 
 .date-second {
   color: #868686;
@@ -414,7 +409,7 @@ body {
   line-height: 17px;
   padding: 1rem;
   background-color: whitesmoke;
-} 
+}
 
 .first-part-hero h1 {
   padding-top: 0;
@@ -423,14 +418,6 @@ body {
   background: url('/images/glowy.jpg') center/cover;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-}
-
-hr {
-  width: 60px;
-  height: 3px;
-  background-color: #ff4f38;
-  border: none;
-  margin: 20px auto 10px auto;
 }
 
 .creative-heading hr {

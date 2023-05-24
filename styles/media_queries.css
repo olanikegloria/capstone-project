@@ -1,317 +1,306 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 @media only screen and (min-width: 768px) {
-    .none {
-        display: none;
-    }
+  .none {
+    display: none;
+  }
 
-    .remove {
-        display: block;
-    }
+  .remove {
+    display: block;
+  }
 
-    .total-desktop-heading {
-        display: block;
-    }
+  .total-desktop-heading {
+    display: block;
+  }
 
-    .heading-desktop {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0.5rem 2rem;
-    }
+  .heading-desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+  }
 
-    .desktop-lists {
-        display: flex;
-        list-style: none;
-        align-items: center;
-        justify-content: space-between;
-        padding-right: 4rem;
-        flex-wrap: wrap;
+  .desktop-lists {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 4rem;
+    flex-wrap: wrap;
+  }
 
-    }
+  .desktop-lists li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #868686;
+    padding-right: 2.5rem;
+  }
 
-    .desktop-lists li a {
-        text-decoration: none;
-        font-size: 1.2rem;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 17px;
-        display: flex;
-        align-items: center;
-        color: #868686;
-        padding-right: 2.5rem;
-    }
+  .header ul li a {
+    text-decoration: none;
+    color: white;
+  }
 
-    .heading-desktop .about a {
-        color: #ff4f38;
-    }
+  .heading-desktop .about a {
+    color: #ff4f38;
+  }
 
-    .heading-desktop .campaign a {
-        border: 5px solid #ff4f38;
-        padding: 10px;
-    }
+  .heading-desktop .campaign a {
+    border: 5px solid #ff4f38;
+    padding: 10px;
+  }
 
-    .header {
-        background-color: #3E3E3E;
-        width: 100%;
-    }
+  .header {
+    background-color: #3e3e3e;
+    width: 100%;
+  }
 
-    .header ul {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        list-style: none;
-        padding-right: 8rem;
-        flex-wrap: wrap;
-    }
+  .header ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding-right: 8rem;
+    flex-wrap: wrap;
+  }
 
-    .header ul li {
-        padding: 0.8rem;
-    }
+  .header ul li {
+    padding: 0.8rem;
+  }
 
-    .header ul li a {
-        text-decoration: none;
-        color: white;
-    }
+  .first-part h1 {
+    padding-top: 5rem;
+  }
 
-    .first-part h1 {
-        padding-top: 5rem;
-    }
+  .first-part-about {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+  }
 
-    .first-part h1 {
-        padding-top: 0;
+  .bg-white {
+    margin: 0 20rem;
+  }
 
-    }
+  .second-part-about {
+    background-color: white;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 0;
+  }
 
-    .first-part-about {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 0.5rem;
-    }
+  .creative {
+    margin: 2rem 18rem;
+  }
 
-    .bg-white {
-        margin: 0 20rem;
-    }
+  .creative h3 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
 
-    .second-part-about {
-        background-color: white;
-        padding: 2rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-        border-radius: 0;
-    }
+  .creative img {
+    padding: 0 5rem;
+  }
 
-    .creative {
-        margin: 2rem 18rem;
-    }
+  .past-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding: 0 10rem;
+    margin-bottom: 2rem;
+  }
 
-    .creative h3 {
-        font-size: 2rem;
-        font-weight: 500;
-    }
+  .past-img img {
+    padding: 1rem;
+    width: 100%;
+  }
 
-    .creative img {
-        padding: 0 5rem;
-    }
+  .footer-desktop {
+    display: flex;
+    background-color: #3e3e3e;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+  }
 
-    .past-img {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-        padding: 0 10rem;
-        margin-bottom: 2rem;
-    }
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 8rem;
+  }
 
-    .past-img img {
-        padding: 1rem;
-        width: 100%;
-    }
+  .footer-desktop img {
+    align-self: center;
+    width: 60%;
+    padding: 0 4rem;
+  }
 
-    .footer-desktop {
-        display: flex;
-        background-color: #3E3E3E;
-        color: white;
-        align-items: center;
-        justify-content: center;
-        padding: 4rem;
-    }
+  .featured-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    margin: 5rem 10rem;
+  }
 
-    .footer-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 0 8rem;
-    }
+  .speaker-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
+  .speakers-text {
+    padding-left: 1rem;
+  }
 
-    .footer-desktop img {
-        align-self: center;
-        width: 60%;
-        padding: 0 4rem;
-    }
+  .card1 .speakers-text {
+    margin-left: 0.5rem;
+  }
 
-    .featured-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        place-items: center;
-        margin: 5rem 10rem;
-    }
+  .card2 .speakers-text {
+    margin-left: 4.5rem;
+  }
 
-    .speaker-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  .card3 .speakers-text {
+    margin-left: 4.5rem;
+  }
 
-    .speakers-text {
-        padding-left: 1rem;
-    }
+  .card4 {
+    margin-left: 0.5rem;
+  }
 
-    .card1 .speakers-text {
-        margin-left: 0.5rem;
-    }
+  .card4 .speakers-text {
+    margin-left: 5rem;
+  }
 
-    .card2 .speakers-text {
-        margin-left: 4.5rem;
-    }
+  .card5 .speakers-text {
+    margin-left: 5.5rem;
+  }
 
+  .card5 img {
+    width: 160%;
+  }
 
-    .card3 .speakers-text {
-        margin-left: 4.5rem;
-    }
+  .card6 .speakers-text {
+    margin-left: 6.5rem;
+  }
 
-    .card4 {
-        margin-left: 0.5rem;
-    }
+  .card6 img {
+    width: 160%;
+    margin-left: 1rem;
+  }
 
-    .card4 .speakers-text {
-        margin-left: 5rem;
-    }
+  .contents {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+  }
 
-    .card5 .speakers-text {
-        margin-left: 5.5rem;
-    }
+  .main-program-content {
+    flex-direction: row;
+    gap: 10px;
+    margin: 2rem 4rem;
+  }
 
-    .card5 img {
-        width: 160%;
-    }
+  .back-white {
+    background-color: white;
+  }
 
-    .card6 .speakers-text {
-        margin-left: 6.5rem;
-    }
+  .black {
+    color: black;
+  }
 
-    .card6 img {
-        width: 160%;
-        margin-left: 1rem;
-    }
+  .main-hero-txt {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 15rem;
+    padding-right: 32rem;
+    display: flex;
+    flex-direction: column;
+  }
 
-    .contents {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 2rem;
-    }
+  .second-part-hero {
+    background-color: whitesmoke;
+    padding-right: 5rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    line-height: 25px;
+    margin-bottom: 5rem;
+    margin-left: 1rem;
+  }
 
-    .main-program-content {
-        flex-direction: row;
-        gap: 10px;
-        margin: 2rem 4rem;
-    }
+  .hero-headings-about {
+    margin: 0 25rem;
+  }
 
-    .back-white {
-        background-color: white;
-    }
+  .first-part-hero {
+    padding-top: 8rem;
+    margin-left: 1rem;
+  }
 
-    .black {
-        color: black;
-    }
+  .first-part-hero p {
+    padding-bottom: 0;
+  }
 
-    .main-hero-txt {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        padding-left: 15rem;
-        padding-right: 32rem;
-        display: flex;
-        flex-direction: column;
-    }
+  .date-head {
+    font-size: 2rem;
+    font-weight: 800;
+    padding-bottom: 1rem;
+  }
 
-    .second-part-hero {
-        background-color: whitesmoke;
-        padding-right: 5rem;
-        padding-top: 1.2rem;
-        padding-bottom: 1.2rem;
-        line-height: 25px;
-        margin-bottom: 5rem;
-        margin-left: 1rem;
-    }
+  .date-second {
+    padding-bottom: 3rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
 
+  .speaker-container:not(.card1):not(.card2) {
+    display: flex;
+  }
 
-    .hero-headings-about {
-        margin: 0 25rem;
-    }
+  .companies {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 1.5rem;
+  }
 
+  .partner-container hr {
+    width: 3%;
+  }
 
-    .first-part-hero {
-        padding-top: 8rem;
-        margin-left: 1rem;
-    }
+  .see-all {
+    text-align: center;
+    text-decoration: underline;
+  }
 
-    .first-part-hero p {
-        padding-bottom: 0;
-    }
+  .featured-title {
+    padding-top: 0;
+    margin-top: 0;
+  }
 
-    .date-head {
-        font-size: 2rem;
-        font-weight: 800;
-        padding-bottom: 1rem;
-    }
-
-    .date-second {
-        padding-bottom: 3rem;
-        font-weight: 600;
-        font-size: 1.2rem;
-    }
-
-    .speaker-container:not(.card1):not(.card2) {
-        display: flex;
-    }
-
-    .companies {
-        padding-left: 3rem;
-        padding-right: 3rem;
-        padding-top: 4rem;
-        padding-bottom: 1.5rem;
-    }
-
-    .partner-container hr {
-        width: 3%;
-    }
-
-    .see-all {
-        text-align: center;
-        text-decoration: underline;
-
-    }
-
-    .featured-title {
-        padding-top: 0;
-        margin-top: 0;
-    }
-
-    .card1 .speaker-img img {
-        width: 100%;
-    }
+  .card1 .speaker-img img {
+    width: 100%;
+  }
 }

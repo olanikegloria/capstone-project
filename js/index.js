@@ -69,23 +69,23 @@ speakers.forEach((content) => {
                   <h2 class="speaker-name">${content.name}</h2>
                   <p class="post">${content.position}</p>
                   <p class="description">${content.description}</p>
-                </div>`
+                </div>`;
   featuredContainer.appendChild(speakerContainer);
 });
 
 const seeMoreBtn = document.querySelector('.see-more');
 
 function toggleHiddenCards() {
-    const hiddenCards = document.querySelectorAll('.speaker-container:not(.card1):not(.card2)');
-    hiddenCards.forEach((card) => {
-      if (card.style.display === 'none') {
-        card.style.display = 'flex';
-        seeMoreBtn.innerHTML = '<a href="#">LESS</a><i class="fa fa-chevron-up"></i>';
-      } else {
-        card.style.display = 'none';
-        seeMoreBtn.innerHTML = '<a href="#">MORE</a><i class="fa fa-chevron-down"></i>';
-      }
-    });
+  const hiddenCards = document.querySelectorAll('.speaker-container:not(.card1):not(.card2)');
+  hiddenCards.forEach((card) => {
+    if (card.style.display === 'none') {
+      card.style.display = 'flex';
+      seeMoreBtn.innerHTML = '<a href="#">LESS</a><i class="fa fa-chevron-up"></i>';
+    } else {
+      card.style.display = 'none';
+      seeMoreBtn.innerHTML = '<a href="#">MORE</a><i class="fa fa-chevron-down"></i>';
+    }
+  });
 }
-  
-  seeMoreBtn.addEventListener('click', toggleHiddenCards);
+
+seeMoreBtn.addEventListener('click', toggleHiddenCards);
