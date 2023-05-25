@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>capstone project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&family=Poppins:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/media_queries.css" />
+    <script src="./js/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="side-menu">
+                <div class="header">
+                    <svg width="24" class="close-btn" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"
+                            fill="currentColor" />
+                    </svg>
+                </div>
+            
+                <ul>
+                    <li>
+                        <a href="./html/about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="#program">Program</a>
+                    </li>
+                    <li>
+                        <a href="#join">Join</a>
+                    </li>
+                    <li>
+                        <a href="#sponsor">sponsor</a>
+                    </li>
+                    <li>
+                        <a href="#news">news</a>
+                    </li>
+                    <li>
+                        <a href="#cc campaign">cc campaaign</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="heading none">
+                <svg width="31" class="bx-menu" height="28" viewBox="0 0 31 28" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="31" height="27.28" fill="url(#pattern0)" />
+                    <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_68_6" transform="scale(0.02 0.0227273)" />
+                        </pattern>
+                        <image id="image0_68_6" width="50" height="44"
+                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAsCAYAAAAn4+taAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpBMEM2QUUyRjMzMDQxMUU1OUQyQ0NDMDJGMDc1OEMxOSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpBMEM2QUUzMDMzMDQxMUU1OUQyQ0NDMDJGMDc1OEMxOSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkEwQzZBRTJEMzMwNDExRTU5RDJDQ0MwMkYwNzU4QzE5IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkEwQzZBRTJFMzMwNDExRTU5RDJDQ0MwMkYwNzU4QzE5Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+2Wl8LQAAAIJJREFUeNrs2EEKgzAUBNC0CK56uqB3qAeqd2iP58qV/uQKXQTj+zD7PBgYyCPnfKQO7pk6ORAQEBCQJjdE5sgY2S9qqG8vkJ9qgYCAgLTYkU/kFdkuaqhvL5C3aoGAgICA/DGIay+DuKgWCAgISIsdmVInH3Rf1QIBAQEBuTvkFGAAL5wOYApfVmAAAAAASUVORK5CYII=" />
+                    </defs>
+                </svg>
+                <div class="logo-img">
+                    <img src="./images/logo.png">
+                </div>
+            </div>
+            <div class="total-desktop-heading">
+                <div class="header">
+                    <ul>
+                        <li><img src="./images/Rectangle.svg"></li>
+                        <li><img src="./images/twitter.svg"></li>
+                        <li><a>English</a></li>
+                        <li><a>My page</a></li>
+                        <li><a>logout</a></li>
+                    </ul>
+                </div>
+                <div class="heading-desktop">
+                    <div class="logo-img">
+                        <img src="./images/logo.png">
+                    </div>
+                    <ul class="desktop-lists">
+                        <li class="about">
+                            <a href="./html/about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="#program">Program</a>
+                        </li>
+                        <li>
+                            <a href="#join">Join</a>
+                        </li>
+                        <li>
+                            <a href="#sponsor">Sponsor</a>
+                        </li>
+                        <li>
+                            <a href="#news">News</a>
+                        </li>
+                        <li class="campaign">
+                            <a href="#cc campaign">campaign</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-text main-hero-txt">
+            <div class="hero-headings ">
+               <div class="first-part first-part-hero">
+                <p>"Hello! Sharing  world"</p>
+                <h1>CREATIVE COMMONS GLOBAL SUBMIT <br>2015</h1>
+               </div>
+                <p class="second-part second-part-hero ">A joyful celebration believing in the value of openness and sharing, creating a positive change with people from over 80 countries is taking place in October, in Korea.</p>
+            </div>
+            <div class="date">
+                <h3 class="date-head">2015.10.15(THU) ~ 16(FRI)</h3>
+                <p class="date-second">@ National Museum of Karea, Art Center Nabi and more</p>
+            </div>
+        </div>
+    </section>
+    <section class="main-program">
+        <div class="main-program-container">
+           <div class="main-heading">
+            <h3>Main program</h3>
+            <hr>
+           </div>
+           <div class="main-program-content">
+            <div class="contents">
+                <img src="./images/program_icon_01 1.svg">
+                <h4>Lecture</h4>
+                <p>Listen to the speakers from various countries about the messages of sharing and opening.</p>
+            </div>
+            <div class="contents">
+                <img src="./images/program_icon_02 1.svg">
+                <h4>Forum</h4>
+                <p>Listen to the speakers from various countries about the messages of sharing and opening.</p>
+            </div>
+            <div class="contents">
+                <img src="./images/program_icon_03 1.svg">
+                <h4>CC Exhibition</h4>
+                <p>Listen to the speakers from various countries about the messages of sharing and opening.</p>
+            </div>
+            <div class="contents">
+                <img src="./images/program_icon_04 1 (1).svg">
+                <h4>Workshop</h4>
+                <p>Listen to the speakers from various countries about the messages of sharing and opening.</p>
+            </div>
+            <div class="contents">
+                <img src="./images/program_icon_05 1.svg">
+                <h4>CC Ignite</h4>
+                <p>Listen to the speakers from various countries about the messages of sharing and opening.</p>
+            </div>
+            <div class="main-btn none">
+                <a>Join cc global submit 2015</a>
+            </div>
+           </div>
+        <div class="remove see-all">
+            <h3>SEE THE WHOLE PROGRAM</h3>
+        </div>
+        </div>
+    </section>
+    <section class="featured">
+        <div class="featured-title">
+            <h3>Featured speakers</h3>
+            <hr>
+        </div>
+        <div class="featured-container" id="speakers">
+        </div>
+        <ul class="featured-btn none">
+            <li class="see-more none"><a href="#">MORE</a>
+            <i class="fa fa-chevron-down"></i></li>
+        </ul>
+    </section>
+    <section class="partner remove ">
+        <div class="partner-container">
+            <h3 class="partner-heading">Partner</h3>
+            <hr>
+        </div>
+        <div class="companies">
+            <img src="./images/mozilla 1.png">
+            <img src="./images/googlekorea 1.png">
+            <img src="./images/naver 1.png">
+            <img src="./images/daumkakaologo 1.png">
+            <img src="./images/airbnb 1.png">
+        </div>
+    </section>
+    <footer>
+        <div class="footer-desktop remove back-white">
+            <img src="./images/cck-logo1 1.svg">
+            <div class="footer-content">
+                <p class="black">2015 Creative Commons Korea. Some Rights Reserved.</p>
+                <p class="black">달리 정하지 않은 웹사이트의 모든 내용은 크리에이티브 커먼즈 저작자표시 2.0 대한민국 라이선스에 따라 이용할 수 있습니다.
+                    자세한 이용기능 내용과 허락조건은 http://creativecommons.org/licences/by/2.0/kr 를 보세요.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

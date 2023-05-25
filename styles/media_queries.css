@@ -1,0 +1,271 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .none {
+    display: none;
+  }
+
+  .remove {
+    display: block;
+  }
+
+  .total-desktop-heading {
+    display: block;
+  }
+
+  .heading-desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+  }
+
+  .desktop-lists {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 4rem;
+    flex-wrap: wrap;
+  }
+
+  .desktop-lists li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #868686;
+    padding-right: 2.5rem;
+  }
+
+  .header ul li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .heading-desktop .about a {
+    color: #ff4f38;
+  }
+
+  .heading-desktop .campaign a {
+    border: 5px solid #ff4f38;
+    padding: 10px;
+  }
+
+  .header {
+    background-color: #3e3e3e;
+    width: 100%;
+  }
+
+  .header ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding-right: 8rem;
+    flex-wrap: wrap;
+  }
+
+  .header ul li {
+    padding: 0.8rem;
+  }
+
+  .first-part-hero {
+    padding-top: 3rem;
+    padding-left: 1rem;
+  }
+
+  .first-part-hero h1 {
+    padding-top: 0.5rem;
+    max-width: 100%;
+    font-size: 3rem;
+  }
+
+  .first-part-hero h1 br {
+    display: block;
+  }
+
+  .first-part-about {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+  }
+
+  .first-part-about h1 {
+    padding-top: 5.5rem;
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+
+  .first-part-about hr {
+    margin-top: 0;
+  }
+
+  .bg-white {
+    margin: 0 20rem;
+  }
+
+  .second-part-about {
+    background-color: white;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 0;
+  }
+
+  .creative {
+    margin: 2rem 18rem;
+  }
+
+  .creative h3 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .creative img {
+    padding: 0 5rem;
+  }
+
+  .card-container {
+    flex-direction: row;
+  }
+
+  .footer-desktop {
+    display: flex;
+    background-color: #3e3e3e;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 8rem;
+  }
+
+  .footer-desktop img {
+    align-self: center;
+    width: 60%;
+    padding: 0 4rem;
+  }
+
+  .featured {
+    padding: 60px 160px;
+    margin-bottom: 2em;
+  }
+
+  .speakerContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 50px 40px;
+  }
+
+  .speaker-photo {
+    position: relative;
+    width: 30%;
+  }
+
+  .speakerCard:not(.card1):not(.card2) {
+    display: flex;
+  }
+
+  .contents {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .main-program-content {
+    flex-direction: row;
+    gap: 10px;
+    margin: 2rem 4rem;
+  }
+
+  .back-white {
+    background-color: white;
+  }
+
+  .black {
+    color: black;
+  }
+
+  .main-hero-txt {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 15rem;
+    padding-right: 32rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .second-part-hero {
+    background-color: whitesmoke;
+    padding-right: 5rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    line-height: 25px;
+    margin-bottom: 5rem;
+    margin-left: 1rem;
+  }
+
+  .hero-headings-about {
+    margin: 0 25rem;
+  }
+
+  .date-head {
+    font-size: 2rem;
+    font-weight: 800;
+    padding-bottom: 1rem;
+  }
+
+  .date-second {
+    padding-bottom: 3rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  .companies {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 1.5rem;
+    margin: 0 12rem;
+  }
+
+  .partner-container hr {
+    width: 3%;
+  }
+
+  .see-all {
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  .featured-title {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .card1 .speaker-img img {
+    width: 100%;
+  }
+}
