@@ -15,7 +15,7 @@ const speakers = [
     name: 'yonkai Benkelry',
     position: 'Berkman Professor',
     description: 'Benkler studies commons-based peer production, and published his seminal book',
-    image: '../images/speaker.jpg',
+    image: './images/speaker.jpg',
     classname: 'card1',
   },
 
@@ -23,7 +23,7 @@ const speakers = [
     name: 'Kilnon Joe',
     position: 'Chief Director',
     description: 'As the main venue for new media art production in Korea, Nabi promotes.',
-    image: '../images/speaker.jpg',
+    image: './images/prof1.webp',
     classname: 'card2',
   },
 
@@ -31,7 +31,7 @@ const speakers = [
     name: 'SohYeong Noh',
     position: 'Director of Art',
     description: 'As the main venue for new media art production in Korea, Nabi promotes.',
-    image: '../images/speaker.jpg',
+    image: './images/prof2.jpg',
     classname: 'card3',
   },
 
@@ -39,7 +39,7 @@ const speakers = [
     name: 'Julia Leda',
     position: 'President',
     description: 'European ingetration, political democracy and participation of youth',
-    image: '../images/grad2.jpeg',
+    image: './images/prof6.jpg',
     classname: 'card4',
   },
 
@@ -47,7 +47,7 @@ const speakers = [
     name: 'Ryan Merkley',
     position: 'CEO of Creativve Commons',
     description: 'Ryan had been leading open-source projects at the Mozilla Foundation',
-    image: '../images/speaker.jpg',
+    image: './images/prof7.jpg',
     classname: 'card5',
   },
 
@@ -55,7 +55,7 @@ const speakers = [
     name: 'Lila tretikov',
     position: 'Executive Director',
     description: 'Lila Tretikov is the Executive of the Wikimedia Foundation, the nonprofit',
-    image: '../images/speaker.jpg',
+    image: './images/prof8.jpg',
     classname: 'card6',
   },
 

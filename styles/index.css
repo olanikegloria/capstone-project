@@ -368,6 +368,7 @@ hr {
 .speaker-photo {
   position: relative;
   width: 40%;
+  object-fit: contain;
 }
 
 .speaker-photo img {
