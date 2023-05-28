@@ -358,6 +358,12 @@ hr {
   display: grid;
   grid-template-columns: 1fr;
   gap: 40px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.add-auto {
+  height: auto;
 }
 
 .speakerCard {
@@ -461,9 +467,9 @@ hr {
   line-height: 1.4;
 }
 
-.speakerCard:not(.card1):not(.card2) {
+/* .speakerCard:not(.card1):not(.card2) {
   display: none;
-}
+} */
 
 .date-second {
   color: #868686;
@@ -499,4 +505,8 @@ hr {
 .partner-container hr {
   width: 8%;
   height: 1px;
+}
+
+.see-less {
+  display: none;
 }

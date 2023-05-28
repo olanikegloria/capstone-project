@@ -108,3 +108,17 @@ speakers.forEach((itemContent) => {
 
 const targetElement = document.querySelector('#speakers');
 targetElement.appendChild(cardContainer);
+
+const seeMore = document.querySelector('.see-more');
+const html = `<a href="#">LESS</a>
+                    <i class="fa fa-chevron-up"></i>`;
+
+seeMore.addEventListener('click', () => {
+  cardContainer.classList.toggle('add-auto');
+  if (cardContainer.classList.contains('add-auto')) {
+    seeMore.innerHTML = html;
+  } else {
+    seeMore.innerHTML = `<a href="#">MORE</a>
+                    <i class="fa fa-chevron-down"></i>`;
+  }
+});
